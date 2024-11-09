@@ -1,3 +1,7 @@
+import yfinance as yf
+import pandas as pd
+import numpy as np
+
 def download_data(ticker: str, start_date, end_date):
     data = yf.download(ticker, start=start_date, end=end_date)
     data = data[['Adj Close']]

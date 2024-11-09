@@ -1,3 +1,7 @@
+import pandas as pd
+import ta
+import numpy as np
+
 class Position:
     def _init_(self, ticker: str, price: float, n_shares: int):
         self.ticker = ticker
